@@ -1,13 +1,12 @@
 {
-  "name": "vue-video-player",
-  "description": "video.js component for Vue",
-  "version": "5.0.2",
+  "name": "@shravan_shandilya/vue-video-player",
+  "description": "fork of surmon-china's video.js component for Vue",
+  "version": "8.1.0-0",
   "license": "MIT",
   "private": false,
   "author": {
-    "name": "Surmon",
-    "email": "surmon@foxmail.com",
-    "url": "https://surmon.me"
+    "name": "Shravan Shandilya",
+    "email": "s.shravan95@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/surmon-china/vue-video-player/issues"
@@ -39,7 +38,7 @@
   "scripts": {
     "build:spa": "cross-env NODE_ENV=production webpack --config config/build.conf.js",
     "build:ssr": "babel src/ssr.js --out-file dist/ssr.js",
-    "build": "npm run build:spa && npm run build:ssr",
+    "build": "npm run build:spa",
     "unit": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --watch",
     "test": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --single-run",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
@@ -47,9 +46,7 @@
     "publish": "git push && git push --tags && npm publish"
   },
   "dependencies": {
-    "object-assign": "^4.1.1",
-    "video.js": "^6.6.0",
-    "videojs-contrib-hls": "^5.12.2",
+    "video.js": "^7.0.0",
     "videojs-flash": "^2.1.0",
     "videojs-hotkeys": "^0.2.20"
   },
